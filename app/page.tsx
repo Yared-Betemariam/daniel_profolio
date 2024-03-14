@@ -16,12 +16,12 @@ export default function Home() {
     {
       name: "Instagram",
       icon: <FaInstagram />,
-      link: "@yvng_bura",
+      link: "@dana_boii44",
     },
     {
       name: "Telegram",
       icon: <FaTelegram />,
-      link: "@BuraVibes",
+      link: "@danicoll321",
     },
   ];
 

@@ -11,7 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Brook | A Thumbnail Designer",
+  title: "Dani | A Thumbnail Designer",
   description: "I create Beautiful Thumbnails",
   icons: [
     {
