@@ -3,4 +3,6 @@ export const images = [
   "/thumbs/b.jpg",
   "/thumbs/c.jpg",
   "/thumbs/d.jpg",
+  "/thumbs/e.jpg",
+  "/thumbs/f.jpg",
 ];
