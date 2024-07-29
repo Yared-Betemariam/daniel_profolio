@@ -12,8 +12,8 @@ const Header = () => {
     },
   ];
   return (
-    <div className="fixed top-0 right-0 left-0 h-14">
-      <div className="wrapper bg-gray-900/95 rounded-b-md shadow-md  left-auto right-auto flex justify-between items-center h-full px-4 z-50">
+    <div className="fixed z-50 top-0 right-0 left-0 h-14">
+      <div className="wrapper bg-gray-900 border border-t-0 border-gray-100/15 rounded-b-xl shadow-md  left-auto right-auto flex justify-between items-center h-full px-4 z-50">
         <Image
           alt="Brook"
           src={"/logo.png"}

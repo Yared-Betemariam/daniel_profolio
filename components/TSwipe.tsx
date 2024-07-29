@@ -9,6 +9,8 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Roboto } from "next/font/google";
 import { images } from "@/lib/images";
+import { Check } from "lucide-react";
+import { FaCheck } from "react-icons/fa6";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -43,7 +45,7 @@ const TSwipe = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0.9 }}
-        className="overflow-x-auto bg-gray-100 rounded-md p-2 lg:p-4 flex flex-col gap-3 -z-10"
+        className="overflow-x-auto bg-gray-100 rounded-xl p-2 lg:p-4 flex flex-col gap-3 -z-10"
       >
         <div className={cn(roboto.className, "relative")}>
           <Image
@@ -53,7 +55,7 @@ const TSwipe = () => {
             height={720}
             className="rounded-xl"
           />
-          <span className="bg-gray-900/90 rounded-md p-2 absolute bottom-2 right-2   lg:px-2 lg:py-1 text-sm lg:text-base text-gray-300/80 font-normal">
+          <span className="bg-gray-900/90 rounded-md p-2 absolute bottom-2 right-2   lg:px-2 lg:py-1 text-sm lg:text-base text-white font-normal">
             1:26
           </span>
         </div>
@@ -67,15 +69,18 @@ const TSwipe = () => {
           />
           <div
             className={cn(
-              "flex flex-col leading-3 text-gray-950",
+              "flex flex-col gap-1 leading-3 text-gray-950",
               roboto.className
             )}
           >
-            <span className="font-bold text-lg lg:text-xl">
-              This is the thumbnails I made
+            <span className="font-semibold text-lg lg:text-xl">
+              I made this thumbnail for a client (in 12 min)
             </span>
-            <span className="text-sm *:lg:text-base opacity-70">Dani</span>
-            <span className="text-sm lg:text-base opacity-70">
+            <p className="text-sm lg:text-[17px] opacity-70 flex gap-2 items-center">
+              <span>Dani</span>
+              <FaCheck className="bg-black text-sm text-white rounded-full p-0.5" />
+            </p>
+            <span className="text-sm lg:text-[17px] opacity-70">
               1.2B views &#183; 10 minutes ago
             </span>
           </div>
@@ -100,7 +105,7 @@ const ButtonWrapper = ({
       whileHover={{ scale: 0.9 }}
       whileTap={{ scale: 1.2 }}
       onClick={onClick}
-      className="text-gray-900/70 bg-gray-300/90 p-1 lg:p-2 rounded-full transition text-2xl lg:text-4xl flex items-center justify-center"
+      className="text-gray-100/70 p-1 lg:p-2 rounded-full transition text-2xl lg:text-4xl flex items-center justify-center"
     >
       {children}
     </motion.button>

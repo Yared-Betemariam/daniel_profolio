@@ -68,7 +68,7 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border scroll-smooth scroll-m-12;
   }
   body {
     @apply bg-background text-foreground;
@@ -78,6 +78,26 @@
   }
 
   .squared {
-    @apply bg-square bg-center bg-repeat opacity-[7%];
+    @apply bg-square bg-center bg-repeat opacity-[1.2%];
   }
+
+  .h2 {
+    @apply text-4xl md:text-5xl font-bold;
+  }
+
+  .body {
+    @apply opacity-60 max-w-md lg:max-w-xl;
+  }
+
+  .tag {
+    @apply bg-white text-primary px-2 py-0.5 shadow-md shadow-white/30  w-fit opacity-100 font-semibold;
+  }
+
+  .imageclass {
+    @apply hover:ring-4 hover:scale-[102%] duration-300 transition-all ring-white rounded-xl drop-shadow-xl;
+  }
+}
+
+.glow {
+  filter: drop-shadow(0 25px 35px rgba(72, 229, 124, 0.13));
 }
