@@ -1,6 +1,6 @@
 import TSwipe from "@/components/TSwipe";
-import { designs, designs1, designs2, images } from "@/lib/images";
-import { cn, fontWrapper } from "@/lib/utils";
+import { designs1, designs2, images, labels1, labels2 } from "@/lib/images";
+import { fontWrapper } from "@/lib/utils";
 import Image from "next/image";
 import { FaInstagram, FaTelegram } from "react-icons/fa6";
 
@@ -69,7 +69,9 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <h2 className="body tag text-center mx-auto my-8">All Designs</h2>
+          <h2 className="body tag text-center mx-auto my-8">
+            Social Media Posts
+          </h2>
           <div className="flex flex-col sm:flex-row gap-4 lg:gap-6">
             <div className="flex flex-col gap-4 lg:gap-6">
               {designs1.map((item) => (
@@ -86,6 +88,39 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-4 lg:gap-6">
               {designs2.map((item) => (
+                <div key={item}>
+                  <Image
+                    alt="Designs"
+                    src={item}
+                    width={1280}
+                    height={720}
+                    className="imageclass"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 className="body tag text-center mx-auto my-8">
+            Labels for products
+          </h2>
+          <div className="flex flex-col sm:flex-row gap-4 lg:gap-6">
+            <div className="flex flex-col gap-4 lg:gap-6">
+              {labels1.map((item) => (
+                <div key={item}>
+                  <Image
+                    alt="Designs"
+                    src={item}
+                    width={1280}
+                    height={720}
+                    className="imageclass"
+                  />
+                </div>
+              ))}
+            </div>
+            <div className="flex flex-col gap-4 lg:gap-6">
+              {labels2.map((item) => (
                 <div key={item}>
                   <Image
                     alt="Designs"
