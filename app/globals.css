@@ -78,7 +78,7 @@
   }
 
   .squared {
-    @apply bg-square bg-center bg-repeat opacity-[1.2%];
+    @apply bg-square bg-center bg-repeat opacity-[1.5%];
   }
 
   .h2 {

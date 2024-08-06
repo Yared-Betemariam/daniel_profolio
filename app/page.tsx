@@ -28,7 +28,7 @@ export default function Home() {
               <span className="text-primary">Dani</span>, A Passionate
             </span>
             <span className="bg-white mx-auto md:mr-auto md:ml-0 text-primary p-2 px-4 m-1 mr-auto">
-              Thumbnail
+              Graphics
             </span>
             <span>Designer</span>
           </h1>

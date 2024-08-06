@@ -7,6 +7,7 @@ export const images = [
   "/thumbs/f.jpg",
   "/thumbs/g.jpg",
   "/thumbs/h.jpg",
+  "/thumbs/i.png",
 ];
 
 export const designs = [
